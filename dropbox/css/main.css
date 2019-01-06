@@ -1,0 +1,195 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+
+/* NAV */
+nav {
+  height: 90px;
+  display: flex;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+}
+nav li {
+  list-style-type: none;
+  margin-right: 2em;
+}
+nav li:last-child {
+  margin-right: 0;
+}
+nav a {
+  font-size: 1.2em;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+#nav-primary {
+  background-color: #61082b;
+  height: 100%;
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+}
+#nav-primary a {
+  color: #fff;
+}
+#nav-primary > div {
+  width: 54em;
+  display: flex;
+  align-items: center;
+}
+#nav-primary > div > img:first-child {
+  margin-right: 0.4em;
+}
+#nav-secondary {
+  background-color: #fff;
+  height: 100%;
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+#nav-secondary a {
+  color: #000;
+}
+#nav-secondary ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  width: 20em;
+  margin-left: 4em;
+}
+
+/* CONTENT */
+#content {
+  display: flex;
+  flex-direction: column;
+}
+#view-1 {
+  display: flex;
+  height: calc(100vh - 90px);
+}
+
+/* WELCOME */
+#welcome {
+  height: 100%;
+  width: 65%;
+  background-color: #61082b;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 7em;
+}
+#welcome > div {
+  width: 50em;
+}
+#welcome h1 {
+  font-weight: 700;
+  font-size: 5em;
+  color: #b4d0e7;
+  max-width: 9em;
+}
+#welcome p {
+  font-size: 1.3em;
+  color: #fff;
+  max-width: 19em;
+}
+
+/* SIGNUP */
+#signup_panel {
+  width: 35%;
+  padding: 0 0 6em 4em;
+  display: flex;
+  align-items: center;
+}
+#signup_panel > div {
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+}
+#signup_panel h3 {
+  font-size: 1.7em;
+  margin-bottom: 0;
+}
+#signup_panel a {
+  color: #0061ff;
+}
+#signin_subtitle {
+  margin-top: 0.3em;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+#signup_form {
+  margin-top: 1.3em;
+}
+#signup_form input[type='text'] {
+  font-size: 0.8em;
+  padding: 0.9em 1em;
+  margin-bottom: 1.4em;
+  width: 100%;
+  outline: none;
+  border: 1px solid #bdc4c9;
+}
+#signup_form input[type='text']:focus {
+  border-color: #000;
+}
+#policy {
+  font-size: 0.7em;
+  font-weight: 300;
+  color: #8392a2;
+  margin: 0 0 1.4em 0;
+}
+#agree_terms_container {
+  margin-bottom: 1.4em;
+}
+#agree_terms_container input {
+  outline: 0;
+  border: 1px solid #bdc4c9;
+  border-radius: 0;
+}
+#agree_terms_container label {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #8392a2;
+  margin-right: 0.6em;
+}
+#signup_form button {
+  width: 100%;
+  margin-bottom: 1.1em;
+  padding: 0.7em;
+  cursor: pointer;
+}
+#signup_button {
+  background-color: #0061ff;
+  border-width: 0;
+  color: #fff;
+  font-weight: 300;
+}
+#signup_button:hover {
+  opacity: 0.85;
+}
+#google_signup_button {
+  background-color: #fff;
+  border: 1px solid #d0d0d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#google_signup_button:hover {
+  background-color: #f5f5f5;
+}
+#google_signup_button img {
+  width: 1.2em;
+  margin-right: 0.5em;
+}

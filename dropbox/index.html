@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dropbox</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700,300"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <nav>
+        <div id="nav-primary">
+          <div>
+            <img src="img/logo.svg" alt="logo" />
+            <img src="img/whitemark.svg" alt="whitemark" />
+            <ul>
+              <li><a href="#">For Teams</a></li>
+              <li><a href="#">For Individuals</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="nav-secondary">
+          <ul>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Download</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="content">
+        <div id="view-1">
+          <div id="welcome">
+            <div>
+              <h1>Put your creative energy to work, with Dropbox</h1>
+              <p>
+                Dropbox is a modern workspace designed to reduce busywork—so you
+                can focus on the things that matter.
+              </p>
+            </div>
+          </div>
+          <div id="signup_panel">
+            <div>
+              <h3>Sign up</h3>
+              <p id="signin_subtitle">
+                or <a href="#">sign in to your account</a>
+              </p>
+              <form id="signup_form">
+                <input
+                  id="first_name"
+                  type="text"
+                  placeholder="First name"
+                  required
+                  name="first_name"
+                />
+                <input
+                  id="last_name"
+                  type="text"
+                  placeholder="Last name"
+                  required
+                  name="last_name"
+                />
+                <input
+                  id="email"
+                  type="text"
+                  placeholder="Email"
+                  required
+                  name="email"
+                />
+                <input
+                  id="password"
+                  type="text"
+                  placeholder="Password"
+                  required
+                  name="password"
+                />
+                <p id="policy">
+                  This page is protected by reCAPTCHA, and subject to the Google
+                  <a href="#">Privacy Policy</a> and
+                  <a href="#">Terms of service.</a>
+                </p>
+                <div id="agree_terms_container">
+                  <input
+                    id="agree_terms"
+                    type="checkbox"
+                    required
+                    name="agree_terms"
+                  />
+                  <label for="agree_terms">
+                    I agree to the <a href="#">Dropbox Terms</a>
+                  </label>
+                </div>
+                <button type="button" id="signup_button">
+                  <span>Sign up</span>
+                </button>
+                <button type="button" id="google_signup_button">
+                  <img src="img/google_login.png" alt="google" />
+                  <span>Sign up with Google</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
