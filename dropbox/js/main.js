@@ -1,6 +1,6 @@
 function scrollToView2() {
   const top =
-    document.getElementById('view_2').offsetTop -
+    document.getElementById('view-2').offsetTop -
     document.getElementsByTagName('nav')[0].offsetHeight;
   window.scrollTo({
     top,
@@ -37,9 +37,9 @@ function onScrollWindow(e, signupPanel) {
 }
 
 window.onload = function() {
-  document.getElementById('down_arrow').onclick = onClickDownArrow;
+  document.getElementById('down-arrow').onclick = onClickDownArrow;
 
-  const signupPanel = document.getElementById('signup_panel');
+  const signupPanel = document.getElementById('signup-panel');
   window.onscroll = e => {
     onScrollWindow(e, signupPanel);
   };

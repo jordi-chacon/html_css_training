@@ -44,20 +44,20 @@ nav ul {
   display: flex;
   margin: 0;
 }
-.nav_item {
+.nav-item {
   margin-right: 2rem;
 }
-.nav_item:last-child {
+.nav-item:last-child {
   margin-right: 0;
 }
-.nav_item a {
+.nav-item a {
   font-size: 1rem;
   font-weight: 600;
 }
-.nav_item a:hover {
+.nav-item a:hover {
   text-decoration: underline;
 }
-#nav_primary {
+#nav-primary {
   height: 100%;
   width: 65%;
   padding-left: 4rem;
@@ -65,19 +65,19 @@ nav ul {
   justify-content: flex-end;
   background-color: #61082b;
 }
-#nav_primary a {
+#nav-primary a {
   color: #fff;
   font-weight: 400;
 }
-#nav_primary > div {
+#nav-primary > div {
   width: 54rem;
   display: flex;
   align-items: center;
 }
-#nav_primary > div > img:first-child {
+#nav-primary > div > img:first-child {
   margin-right: 0.4rem;
 }
-.nav_secondary {
+.nav-secondary {
   height: 100%;
   width: 35%;
   padding: 0 4rem 0 4rem;
@@ -85,12 +85,12 @@ nav ul {
   align-items: center;
   background-color: #b4d0e7;
 }
-.nav_secondary > div {
+.nav-secondary > div {
   width: 20rem;
   display: flex;
   justify-content: flex-end;
 }
-.nav_secondary ul {
+.nav-secondary ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -98,11 +98,11 @@ nav ul {
 }
 
 /* VIEW 1 */
-#view_1 {
+#view-1 {
   display: flex;
   height: 100vh;
 }
-#empty_aside {
+#empty-aside {
   width: 35%;
   background-color: #b4d0e7;
 }
@@ -133,7 +133,7 @@ nav ul {
   max-width: 22rem;
   margin-bottom: 4rem;
 }
-#down_arrow {
+#down-arrow {
   padding: 0;
   background-color: transparent;
   border: none;
@@ -142,7 +142,7 @@ nav ul {
 }
 
 /* SIGNUP */
-#signup_panel {
+#signup-panel {
   position: fixed;
   left: 65vw;
   height: 100vh;
@@ -156,10 +156,10 @@ nav ul {
   display: flex;
   flex-direction: column;
 }
-#signup_panel.hidden {
+#signup-panel.hidden {
   left: 100vw;
 }
-#signup_navbar {
+#signup-navbar {
   height: 90px;
   max-width: 20rem;
   margin: 0;
@@ -167,32 +167,32 @@ nav ul {
   align-items: center;
   justify-content: flex-end;
 }
-#signup_container {
+#signup-container {
   height: calc(100vh - 90px);
   display: flex;
   align-items: center;
 }
-#signup_container > div {
+#signup-container > div {
   max-width: 20rem;
   display: flex;
   flex-direction: column;
 }
-#signup_container h3 {
+#signup-container h3 {
   font-size: 1.7rem;
   margin-bottom: 0;
 }
-#signup_container a {
+#signup-container a {
   color: #0061ff;
 }
-#signin_subtitle {
+#signin-subtitle {
   margin-top: 0.3rem;
   font-size: 0.8rem;
   font-weight: 300;
 }
-#signup_form {
+#signup-form {
   margin-top: 1.3rem;
 }
-#signup_form input[type='text'] {
+#signup-form input[type='text'] {
   font-size: 0.8rem;
   padding: 0.9rem 1rem;
   margin-bottom: 1.4rem;
@@ -200,71 +200,71 @@ nav ul {
   outline: none;
   border: 1px solid #bdc4c9;
 }
-#signup_form input[type='text']:focus {
+#signup-form input[type='text']:focus {
   border-color: #000;
 }
 #policy {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 300;
   color: #8392a2;
   margin: 0 0 1.4rem 0;
 }
-#agree_terms_container {
+#agree-terms-container {
   margin-bottom: 1.4rem;
 }
-#agree_terms_container input {
+#agree-terms-container input {
   outline: 0;
   border: 1px solid #bdc4c9;
   border-radius: 0;
 }
-#agree_terms_container label {
+#agree-terms-container label {
   font-size: 0.8rem;
   font-weight: 400;
   color: #8392a2;
   margin-right: 0.6rem;
 }
-#signup_form button {
+#signup-form button {
   width: 100%;
   margin-bottom: 1.1rem;
   padding: 0.7rem;
   cursor: pointer;
 }
-#signup_button {
+#signup-button {
   background-color: #0061ff;
   border-width: 0;
   color: #fff;
   font-weight: 300;
 }
-#signup_button:hover {
+#signup-button:hover {
   opacity: 0.85;
 }
-#google_signup_button {
+#google-signup-button {
   background-color: #fff;
   border: 1px solid #d0d0d3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#google_signup_button:hover {
+#google-signup-button:hover {
   background-color: #f5f5f5;
 }
-#google_signup_button img {
+#google-signup-button img {
   width: 1.2rem;
   margin-right: 0.5rem;
 }
 
 /* VIEW 2 */
-#view_2 {
+#view-2 {
   display: flex;
   height: calc(100vh - 90px);
   width: 100%;
   background-color: #0061ff;
 }
-#view_2 :first-child {
+#view-2 :first-child {
   width: 65%;
   background-color: #61082b;
 }
-#view_2 :last-child {
+#view-2 :last-child {
   width: 35%;
   background-color: #b4d0e7;
 }
