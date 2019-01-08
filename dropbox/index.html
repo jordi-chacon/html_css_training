@@ -12,32 +12,106 @@
     />
     <link href="css/main.css" rel="stylesheet" type="text/css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700,300"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:600"
+      rel="stylesheet"
+    />
+    <script src="js/main.js"></script>
   </head>
   <body>
     <div>
       <nav>
-        <div id="nav-primary">
+        <div id="nav_primary">
           <div>
             <img src="img/logo.svg" alt="logo" />
             <img src="img/whitemark.svg" alt="whitemark" />
             <ul>
-              <li><a href="#">For Teams</a></li>
-              <li><a href="#">For Individuals</a></li>
+              <li class="nav_item"><a href="#">For Teams</a></li>
+              <li class="nav_item"><a href="#">For Individuals</a></li>
             </ul>
           </div>
         </div>
-        <div id="nav-secondary">
-          <ul>
-            <li><a href="#">Sign in</a></li>
-            <li><a href="#">Download</a></li>
-          </ul>
+        <div class="nav_secondary">
+          <div>
+            <ul>
+              <li class="nav_item"><a href="#">Sign in</a></li>
+              <li class="nav_item"><a href="#">Sign up</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <div id="signup_panel">
+        <ul id="signup_navbar">
+          <li class="nav_item"><a href="#">Sign in</a></li>
+          <li class="nav_item"><a href="#">Download</a></li>
+        </ul>
+        <div id="signup_container">
+          <div>
+            <h3>Sign up</h3>
+            <p id="signin_subtitle">
+              or <a href="#">sign in to your account</a>
+            </p>
+            <form id="signup_form">
+              <input
+                id="first_name"
+                type="text"
+                placeholder="First name"
+                required
+                name="first_name"
+              />
+              <input
+                id="last_name"
+                type="text"
+                placeholder="Last name"
+                required
+                name="last_name"
+              />
+              <input
+                id="email"
+                type="text"
+                placeholder="Email"
+                required
+                name="email"
+              />
+              <input
+                id="password"
+                type="text"
+                placeholder="Password"
+                required
+                name="password"
+              />
+              <p id="policy">
+                This page is protected by reCAPTCHA, and subject to the Google
+                <a href="#">Privacy Policy</a> and
+                <a href="#">Terms of service.</a>
+              </p>
+              <div id="agree_terms_container">
+                <input
+                  id="agree_terms"
+                  type="checkbox"
+                  required
+                  name="agree_terms"
+                />
+                <label for="agree_terms">
+                  I agree to the <a href="#">Dropbox Terms</a>
+                </label>
+              </div>
+              <button type="button" id="signup_button">
+                <span>Sign up</span>
+              </button>
+              <button type="button" id="google_signup_button">
+                <img src="img/google_login.png" alt="google" />
+                <span>Sign up with Google</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
       <div id="content">
-        <div id="view-1">
+        <div id="view_1">
           <div id="welcome">
             <div>
               <h1>Put your creative energy to work, with Dropbox</h1>
@@ -45,69 +119,16 @@
                 Dropbox is a modern workspace designed to reduce busywork—so you
                 can focus on the things that matter.
               </p>
+              <button id="down_arrow">
+                <img src="img/down_arrow.svg" alt="down arrow" />
+              </button>
             </div>
           </div>
-          <div id="signup_panel">
-            <div>
-              <h3>Sign up</h3>
-              <p id="signin_subtitle">
-                or <a href="#">sign in to your account</a>
-              </p>
-              <form id="signup_form">
-                <input
-                  id="first_name"
-                  type="text"
-                  placeholder="First name"
-                  required
-                  name="first_name"
-                />
-                <input
-                  id="last_name"
-                  type="text"
-                  placeholder="Last name"
-                  required
-                  name="last_name"
-                />
-                <input
-                  id="email"
-                  type="text"
-                  placeholder="Email"
-                  required
-                  name="email"
-                />
-                <input
-                  id="password"
-                  type="text"
-                  placeholder="Password"
-                  required
-                  name="password"
-                />
-                <p id="policy">
-                  This page is protected by reCAPTCHA, and subject to the Google
-                  <a href="#">Privacy Policy</a> and
-                  <a href="#">Terms of service.</a>
-                </p>
-                <div id="agree_terms_container">
-                  <input
-                    id="agree_terms"
-                    type="checkbox"
-                    required
-                    name="agree_terms"
-                  />
-                  <label for="agree_terms">
-                    I agree to the <a href="#">Dropbox Terms</a>
-                  </label>
-                </div>
-                <button type="button" id="signup_button">
-                  <span>Sign up</span>
-                </button>
-                <button type="button" id="google_signup_button">
-                  <img src="img/google_login.png" alt="google" />
-                  <span>Sign up with Google</span>
-                </button>
-              </form>
-            </div>
-          </div>
+          <div id="empty_aside"></div>
+        </div>
+        <div id="view_2">
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
