@@ -1,6 +1,6 @@
 function scrollToView2() {
   const top =
-    document.getElementById('view-2').offsetTop -
+    document.getElementById('section2').offsetTop -
     document.getElementsByTagName('nav')[0].offsetHeight;
   window.scrollTo({
     top,
