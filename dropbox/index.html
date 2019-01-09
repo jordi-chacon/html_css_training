@@ -22,133 +22,144 @@
     <script src="js/main.js"></script>
   </head>
   <body>
-    <div>
-      <nav class="background">
-        <div class="background centered-container">
-          <div id="nav-primary">
-            <img src="img/logo.svg" alt="logo" />
-            <img src="img/whitemark.svg" alt="whitemark" />
-            <ul>
-              <li class="nav-item"><a href="#">For Teams</a></li>
-              <li class="nav-item"><a href="#">For Individuals</a></li>
-            </ul>
-          </div>
-          <div class="nav-secondary">
-            <ul>
-              <li class="nav-item"><a href="#">Sign in</a></li>
-              <li class="nav-item"><a href="#">Sign up</a></li>
-            </ul>
-          </div>
+    <nav class="background">
+      <div class="background centered-container">
+        <div id="nav-primary">
+          <img src="img/logo.svg" alt="logo" />
+          <img src="img/whitemark.svg" alt="whitemark" />
+          <ul>
+            <li class="nav-item"><a href="#">For Teams</a></li>
+            <li class="nav-item"><a href="#">For Individuals</a></li>
+          </ul>
         </div>
-      </nav>
-      <section id="signup-panel">
-        <ul id="signup-navbar">
-          <li class="nav-item"><a href="#">Sign in</a></li>
-          <li class="nav-item"><a href="#">Download</a></li>
-        </ul>
-        <div id="signup-container">
-          <div>
-            <h3>Sign up</h3>
-            <p id="signin-subtitle">
-              or <a href="#">sign in to your account</a>
+        <div id="nav-secondary">
+          <ul>
+            <li class="nav-item"><a href="#">Sign in</a></li>
+            <li class="nav-item"><a href="#">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="signup-panel">
+      <ul id="signup-navbar">
+        <li class="nav-item"><a href="#">Sign in</a></li>
+        <li class="nav-item"><a href="#">Download</a></li>
+      </ul>
+      <div id="signup-container">
+        <div>
+          <h3>Sign up</h3>
+          <p id="signin-subtitle">or <a href="#">sign in to your account</a></p>
+          <form id="signup-form">
+            <input
+              id="first-name"
+              type="text"
+              placeholder="First name"
+              required
+              name="first_name"
+            />
+            <input
+              id="last-name"
+              type="text"
+              placeholder="Last name"
+              required
+              name="last_name"
+            />
+            <input
+              id="email"
+              type="text"
+              placeholder="Email"
+              required
+              name="email"
+            />
+            <input
+              id="password"
+              type="text"
+              placeholder="Password"
+              required
+              name="password"
+            />
+            <p id="policy">
+              This page is protected by reCAPTCHA, and subject to the Google
+              <a href="#">Privacy Policy</a> and
+              <a href="#">Terms of service.</a>
             </p>
-            <form id="signup-form">
+            <div id="agree-terms-container">
               <input
-                id="first-name"
-                type="text"
-                placeholder="First name"
+                id="agree-terms"
+                type="checkbox"
                 required
-                name="first_name"
+                name="agree_terms"
               />
-              <input
-                id="last-name"
-                type="text"
-                placeholder="Last name"
-                required
-                name="last_name"
-              />
-              <input
-                id="email"
-                type="text"
-                placeholder="Email"
-                required
-                name="email"
-              />
-              <input
-                id="password"
-                type="text"
-                placeholder="Password"
-                required
-                name="password"
-              />
-              <p id="policy">
-                This page is protected by reCAPTCHA, and subject to the Google
-                <a href="#">Privacy Policy</a> and
-                <a href="#">Terms of service.</a>
+              <label for="agree-terms">
+                I agree to the <a href="#">Dropbox Terms</a>
+              </label>
+            </div>
+            <button type="button" id="signup-button">
+              <span>Sign up</span>
+            </button>
+            <button type="button" id="google-signup-button">
+              <img src="img/google_login.png" alt="google" />
+              <span>Sign up with Google</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div id="content">
+      <section id="section1" class="background">
+        <div class="background centered-container">
+          <div id="welcome">
+            <div>
+              <h1>Put your creative energy to work, with Dropbox</h1>
+              <p>
+                Dropbox is a modern workspace designed to reduce busywork—so you
+                can focus on the things that matter.
               </p>
-              <div id="agree-terms-container">
-                <input
-                  id="agree-terms"
-                  type="checkbox"
-                  required
-                  name="agree_terms"
-                />
-                <label for="agree-terms">
-                  I agree to the <a href="#">Dropbox Terms</a>
-                </label>
-              </div>
-              <button type="button" id="signup-button">
-                <span>Sign up</span>
+              <button id="down-arrow">
+                <img src="img/down_arrow.svg" alt="down arrow" />
               </button>
-              <button type="button" id="google-signup-button">
-                <img src="img/google_login.png" alt="google" />
-                <span>Sign up with Google</span>
+              <button id="signup-free-button">
+                <span>Sign up for free</span>
               </button>
-            </form>
+            </div>
           </div>
         </div>
       </section>
-      <div id="content">
-        <section id="section1" class="background">
-          <div class="background centered-container">
-            <div id="welcome">
-              <div>
-                <h1>Put your creative energy to work, with Dropbox</h1>
-                <p>
-                  Dropbox is a modern workspace designed to reduce busywork—so
-                  you can focus on the things that matter.
-                </p>
-                <button id="down-arrow">
-                  <img src="img/down_arrow.svg" alt="down arrow" />
-                </button>
-              </div>
+      <section id="section2" class="background">
+        <div class="background centered-container">
+          <div>
+            <div id="section2-text">
+              <h3>Keep everything organized without breaking your flow</h3>
+              <p>
+                Dropbox brings your files together, in one central place.
+                They’re easy to find and safely synced across all your
+                devices—so you can access them anytime, anywhere. No more
+                wasting the day tracking down work.
+              </p>
+            </div>
+            <div id="section2-box">
+              <span>Illustration by David McLeod</span>
+              <picture>
+                <source
+                  srcset="img/box_rotated.jpg"
+                  media="(min-width: 1050px)"
+                />
+                <img src="img/box.jpg" alt="box" />
+              </picture>
+            </div>
+            <div id="section2-drop">
+              <span>Photograph by Davy Evans</span>
+              <picture>
+                <source
+                  srcset="img/drop_rotated.jpg"
+                  media="(min-width: 1050px)"
+                />
+                <img src="img/drop.jpg" alt="drop" />
+              </picture>
             </div>
           </div>
-        </section>
-        <section id="section2" class="background">
-          <div class="background centered-container">
-            <div>
-              <div id="section2-text">
-                <h3>Keep everything organized without breaking your flow</h3>
-                <p>
-                  Dropbox brings your files together, in one central place.
-                  They’re easy to find and safely synced across all your
-                  devices—so you can access them anytime, anywhere. No more
-                  wasting the day tracking down work.
-                </p>
-              </div>
-              <div id="section2-box">
-                <span>Illustration by David McLeod</span>
-                <img src="img/box_rotated.jpg" alt="box" />
-              </div>
-              <div id="section2-drop">
-                <span>Photograph by Davy Evans</span>
-                <img src="img/drop_rotated.jpg" alt="box" />
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
