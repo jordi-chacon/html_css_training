@@ -333,6 +333,44 @@ nav ul {
   margin-bottom: 0.2rem;
 }
 
+@media (min-width: 768px) and (max-width: 1049px) {
+  .centered-container {
+    padding: 0 10% 0 10%;
+  }
+
+  nav {
+    height: 90px;
+  }
+  #nav-primary img:nth-child(2) {
+    display: unset;
+  }
+
+  #welcome h1 {
+    max-width: 32rem;
+    margin-top: 4rem;
+    font-size: 3.2rem;
+  }
+  #welcome p {
+    margin-bottom: 3rem;
+  }
+  #signup-free-button {
+    margin-bottom: 8rem;
+  }
+
+  #section2-text,
+  #section2-drop,
+  #section2-box {
+    padding: 0 10% 0 10%;
+  }
+  #section2-text h3 {
+    max-width: 21rem;
+    font-size: 1.8rem;
+  }
+  #section2-text p {
+    margin-right: 44%;
+  }
+}
+
 @media (min-width: 1050px) {
   .background {
     background: linear-gradient(to right, #61082b 65%, #b4d0e7 65%);
@@ -378,14 +416,13 @@ nav ul {
   #welcome {
     height: 100%;
     width: 65%;
-    justify-content: flex-end;
     align-items: center;
   }
   #welcome > div {
     margin: 3rem 7rem 0 7rem;
   }
   #welcome h1 {
-    font-size: 3.9rem;
+    font-size: 4.3rem;
   }
   #welcome p {
     margin-bottom: 4rem;
