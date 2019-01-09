@@ -4,6 +4,8 @@ This repo contains _static_ replicas of existing websites that I have built from
 
 ## Sites
 
+- [Dropbox] - Dropbox's landing page replica. Only top two sections implemented.
 - [Bakery] - Site created by teacher [Jen Kramer](https://github.com/jen4web) for a [CSS Frontend Masters course](https://frontendmasters.com/courses/css-grids-flexbox/)
 
 [bakery]: https://training-bakery.netlify.com
+[dropbox]: https://training-dropbox.netlify.com
